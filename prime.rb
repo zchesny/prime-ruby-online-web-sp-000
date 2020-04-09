@@ -3,7 +3,7 @@ def prime?(num)
   if num < 2
     return false
   end
-  [2..num-1].each do |divisor|
+  (2..num-1).to_a.each do |divisor|
     if num % divisor == 0
       return false
     end
